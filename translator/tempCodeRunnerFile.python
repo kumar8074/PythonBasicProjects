@@ -1,0 +1,7 @@
+def my_decorator(fun):
+    def wrap_func():
+        fun()
+    return wrap_func()
+@my_decorator
+def hello():
+    print('hello')    
